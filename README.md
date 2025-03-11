@@ -6,7 +6,7 @@
 
 ## Installation
 
-First, create a Postgres Database then configure your environment variables. You can generate a `BETTER_AUTH_SECRET` [here](https://www.better-auth.com/docs/installation#set-environment-variables)
+First, create a PostgreSQL Database then configure your environment variables. You can generate a `BETTER_AUTH_SECRET` [here](https://www.better-auth.com/docs/installation#set-environment-variables)
 
 ```bash
 BETTER_AUTH_SECRET=""
