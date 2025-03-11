@@ -2,6 +2,8 @@
 
 [Demo](https://nextjs-pages.better-auth-starter.com)
 
+- [App Router](https://github.com/daveyplate/better-auth-nextjs-starter)
+
 ## Installation
 
 First, create a Postgres Database then configure your environment variables:
