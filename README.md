@@ -1,6 +1,6 @@
 # Better Auth Next.js Starter (Pages Router)
 
-[Demo](https://better-auth-nextjs-pages-starter.vercel.app)
+[Demo](https://nextjs-pages.better-auth-starter.com)
 
 ## Installation
 
