@@ -6,8 +6,8 @@ import { Button } from "./ui/button"
 
 export function Header() {
     return (
-        <header className="sticky top-0 z-50 border-b px-4 py-3 justify-items-center bg-background/60 backdrop-blur">
-            <div className="container flex justify-between items-center">
+        <header className="sticky top-0 z-50 border-b px-4 py-3 bg-background/60 backdrop-blur">
+            <div className="container flex justify-between items-center mx-auto">
                 <Link href="/" className="flex gap-2 items-center">
                     <svg
                         className="size-5"
