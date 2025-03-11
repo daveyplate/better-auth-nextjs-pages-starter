@@ -28,7 +28,10 @@ export function Header() {
                 </Link>
 
                 <div className="flex gap-2 items-center">
-                    <Link href="https://github.com/daveyplate/better-auth-nextjs-pages-starter">
+                    <Link
+                        href="https://github.com/daveyplate/better-auth-nextjs-pages-starter"
+                        target="_blank"
+                    >
                         <Button variant="outline" size="icon" className="size-8 rounded-full">
                             <GitHubIcon />
                         </Button>
