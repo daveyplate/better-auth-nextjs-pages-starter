@@ -12,7 +12,8 @@ export default function App({ Component, pageProps }: AppProps) {
         <>
             <Head>
                 <title>Better Auth Next.js Pages Starter</title>
-                <link rel="manifest" href="/manifest.json" />
+
+                <link rel="manifest" href="/manifest.webmanifest" />
             </Head>
 
             <Providers>
