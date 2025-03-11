@@ -13,6 +13,8 @@ BETTER_AUTH_SECRET=""
 DATABASE_URL=""
 ```
 
+You can generate a `BETTER_AUTH_SECRET` [here](https://www.better-auth.com/docs/installation#set-environment-variables)
+
 Then generate your schema and perform migrations:
 
 ```bash
