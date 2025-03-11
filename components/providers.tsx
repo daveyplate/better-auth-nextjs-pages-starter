@@ -1,11 +1,9 @@
-"use client"
-
 import { AuthQueryProvider } from "@daveyplate/better-auth-tanstack"
 import { AuthUIProviderTanstack } from "@daveyplate/better-auth-ui/tanstack"
 import { QueryClient, QueryClientProvider, isServer } from "@tanstack/react-query"
 import { ThemeProvider } from "next-themes"
 import Link from "next/link"
-import { useRouter } from "next/navigation"
+import { useRouter } from "next/router"
 import type { ReactNode } from "react"
 import { toast } from "sonner"
 
@@ -70,7 +68,6 @@ export function Providers({ children }: { children: ReactNode }) {
                         authClient={authClient}
                         navigate={router.push}
                         replace={router.replace}
-                        onSessionChange={() => router.refresh()}
                         LinkComponent={Link}
                     >
                         {children}

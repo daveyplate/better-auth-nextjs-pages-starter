@@ -1,5 +1,3 @@
-"use client"
-
 import { MonitorIcon, MoonIcon, SunIcon } from "lucide-react"
 import { useTheme } from "next-themes"
 
