@@ -7,7 +7,7 @@
         "defaultBranch": "main"
     },
     "files": {
-        "ignore": ["components/ui", "migrations"]
+        "ignore": ["./components/ui", "./migrations"]
     },
     "formatter": {
         "indentStyle": "space",
@@ -25,9 +25,7 @@
                 "noDoubleEquals": {
                     "fix": "safe",
                     "level": "warn",
-                    "options": {
-                        "ignoreNull": false
-                    }
+                    "options": {}
                 }
             },
             "style": {
@@ -39,6 +37,15 @@
             },
             "correctness": {
                 "noUnusedImports": "info"
+            },
+            "nursery": {
+                "useSortedClasses": {
+                    "fix": "safe",
+                    "level": "info",
+                    "options": {
+                        "functions": ["cn"]
+                    }
+                }
             }
         }
     },

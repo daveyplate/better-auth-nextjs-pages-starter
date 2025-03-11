@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils"
 
 export default function AuthPage({ pathname }: { pathname: string }) {
     return (
-        <main className="flex flex-col grow p-4 gap-3 items-center justify-center">
+        <main className="flex grow flex-col items-center justify-center gap-3 p-4">
             <AuthCard pathname={pathname} />
 
             <p
@@ -17,7 +17,7 @@ export default function AuthPage({ pathname }: { pathname: string }) {
             >
                 Powered by{" "}
                 <Link
-                    className="underline text-warning"
+                    className="text-warning underline"
                     href="https://better-auth.com"
                     target="_blank"
                 >

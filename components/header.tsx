@@ -6,9 +6,9 @@ import { Button } from "./ui/button"
 
 export function Header() {
     return (
-        <header className="sticky top-0 z-50 border-b px-4 py-3 bg-background/60 backdrop-blur">
-            <div className="container flex justify-between items-center mx-auto">
-                <Link href="/" className="flex gap-2 items-center">
+        <header className="sticky top-0 z-50 border-b bg-background/60 px-4 py-3 backdrop-blur">
+            <div className="container mx-auto flex items-center justify-between">
+                <Link href="/" className="flex items-center gap-2">
                     <svg
                         className="size-5"
                         fill="none"
@@ -27,7 +27,7 @@ export function Header() {
                     BETTER-AUTH. STARTER
                 </Link>
 
-                <div className="flex gap-2 items-center">
+                <div className="flex items-center gap-2">
                     <Link
                         href="https://github.com/daveyplate/better-auth-nextjs-pages-starter"
                         target="_blank"

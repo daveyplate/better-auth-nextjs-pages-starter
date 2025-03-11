@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
             </Head>
 
             <Providers>
-                <div className="flex flex-col min-h-svh">
+                <div className="flex min-h-svh flex-col">
                     <Header />
 
                     <Component {...pageProps} />
