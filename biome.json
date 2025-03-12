@@ -30,6 +30,10 @@
             },
             "style": {
                 "noNonNullAssertion": "off",
+                "useSelfClosingElements": {
+                    "fix": "safe",
+                    "level": "warn"
+                },
                 "useTemplate": {
                     "fix": "safe",
                     "level": "warn"
@@ -39,6 +43,7 @@
                 "noUnusedImports": "info"
             },
             "nursery": {
+                "noImgElement": "warn",
                 "useSortedClasses": {
                     "fix": "safe",
                     "level": "info",
