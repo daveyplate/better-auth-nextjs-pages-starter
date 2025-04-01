@@ -68,7 +68,7 @@ export function Providers({ children }: { children: ReactNode }) {
                         authClient={authClient}
                         navigate={router.push}
                         replace={router.replace}
-                        LinkComponent={Link}
+                        Link={Link}
                     >
                         {children}
                     </AuthUIProviderTanstack>
