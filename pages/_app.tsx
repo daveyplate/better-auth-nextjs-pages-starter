@@ -13,6 +13,21 @@ export default function App({ Component, pageProps }: AppProps) {
             <Head>
                 <title>Better Auth Next.js Pages Starter</title>
 
+                <meta
+                    name="viewport"
+                    content="initial-scale=1, viewport-fit=cover, width=device-width"
+                />
+                <meta
+                    name="theme-color"
+                    media="(prefers-color-scheme: light)"
+                    content="oklch(1 0 0)"
+                />
+                <meta
+                    name="theme-color"
+                    media="(prefers-color-scheme: dark)"
+                    content="oklch(0.145 0 0)"
+                />
+
                 <link rel="manifest" href="/manifest.webmanifest" />
             </Head>
 
