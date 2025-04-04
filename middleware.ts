@@ -1,9 +1,12 @@
+import { getSessionCookie } from "better-auth/cookies"
 import { type NextRequest, NextResponse } from "next/server"
 
 export async function middleware(request: NextRequest) {
-    // const sessionCookie = getSessionCookie(request) // Broken
+    // Check cookie for optimistic redirects for protected routes
+    // Use getSession in your RSC to protect a route via SSR or useAuthenticate client side
+    const sessionCookie = getSessionCookie(request)
 
-    if (!request.cookies.has("better-auth.session_token")) {
+    if (!sessionCookie) {
         const redirectTo = request.nextUrl.pathname + request.nextUrl.search
         return NextResponse.redirect(new URL(`/auth/sign-in?redirectTo=${redirectTo}`, request.url))
     }
@@ -12,5 +15,6 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
+    // Protected routes
     matcher: ["/auth/settings"]
 }
