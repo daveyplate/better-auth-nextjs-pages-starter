@@ -9,7 +9,7 @@ export default function AuthPage({ pathname }: { pathname: string }) {
     // useAuthenticate({ enabled: pathname === "settings" })
 
     return (
-        <main className="flex grow flex-col items-center justify-center gap-3 p-4">
+        <main className="flex grow flex-col items-center justify-center gap-4 p-4">
             <AuthCard pathname={pathname} />
 
             <p
