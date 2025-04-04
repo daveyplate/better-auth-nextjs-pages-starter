@@ -1,6 +1,5 @@
 import type { AppProps } from "next/app"
 import Head from "next/head"
-import { Toaster } from "sonner"
 
 import "@/styles/globals.css"
 
@@ -17,16 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
                     name="viewport"
                     content="initial-scale=1, viewport-fit=cover, width=device-width"
                 />
-                <meta
-                    name="theme-color"
-                    media="(prefers-color-scheme: light)"
-                    content="oklch(1 0 0)"
-                />
-                <meta
-                    name="theme-color"
-                    media="(prefers-color-scheme: dark)"
-                    content="oklch(0.145 0 0)"
-                />
+                <meta name="theme-color" content="#ffffff" />
 
                 <link rel="manifest" href="/manifest.webmanifest" />
             </Head>
@@ -37,8 +27,6 @@ export default function App({ Component, pageProps }: AppProps) {
 
                     <Component {...pageProps} />
                 </div>
-
-                <Toaster />
             </Providers>
         </>
     )
